@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 
 # Inherit from device
-$(call inherit-product, device/LGE/REL/device.mk)
+$(call inherit-product, device/LGE/flashlmdd/device.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
@@ -25,7 +25,7 @@ persist.sys.usb.config=mtp
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := flashlmdd
 PRODUCT_NAME := omni_flashlmdd
-PRODUCT_BRAND := LGE
+PRODUCT_BRAND := lge
 PRODUCT_MODEL := LM-V500
 PRODUCT_MANUFACTURER := LGE
-PRODUCT_RELEASE_NAME := LGE LM-V500
+PRODUCT_RELEASE_NAME := V50 ThinQ
