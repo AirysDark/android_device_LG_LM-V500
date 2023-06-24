@@ -1,2 +1,2 @@
-add_lunch_combo omni_REL-userdebug
-add_lunch_combo omni_REL-eng
+add_lunch_combo omni_flashlmdd-userdebug
+add_lunch_combo omni_flashlmdd-eng
