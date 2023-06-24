@@ -1,6 +1,5 @@
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE), flashlmdd)
-LOCAL_PATH := device/lge/flashlmdd
+ifeq ($(TARGET_DEVICE),flashlmdd)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
