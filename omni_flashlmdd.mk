@@ -23,8 +23,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 persist.sys.usb.config=mtp
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := REL
-PRODUCT_NAME := omni_REL
+PRODUCT_DEVICE := flashlmdd
+PRODUCT_NAME := omni_flashlmdd
 PRODUCT_BRAND := LGE
 PRODUCT_MODEL := LM-V500
 PRODUCT_MANUFACTURER := LGE
