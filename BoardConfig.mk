@@ -1,4 +1,4 @@
-DEVICE_PATH := device/LGE/REL
+DEVICE_PATH := device/lge/flashlmdd
 ALLOW_MISSING_DEPENDENCIES := true
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
