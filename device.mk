@@ -1,13 +1,9 @@
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/lge/flashlmdd/flashlmdd-vendor.mk)
+# Inherit from OEM SOC-common
+$(call inherit-product, $(COMMON_PATH)/common.mk)
 
-DEVICE_PATH := device/lge/flashlmdd
-DEVICE_NAME := flashlmdd
+# Copy modules for depmod
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*.ko,$(DEVICE_PATH)/prebuilt,$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1)
 
-# Properties
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-
-# common flash
-$(call inherit-product, device/lge/flash-common/flash.mk
+# Custom ROM asserts
+TARGET_OTA_ASSERT_DEVICE := lge/flashlmdd
